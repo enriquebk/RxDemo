@@ -16,6 +16,8 @@
 		CD91CF5A2201FF7000C8F9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF582201FF7000C8F9DF /* LaunchScreen.storyboard */; };
 		CD91CF652201FF7000C8F9DF /* iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */; };
 		CD91CF702201FF7000C8F9DF /* iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */; };
+		CD91CF94220263F600C8F9DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF96220263F600C8F9DF /* Localizable.strings */; };
+		CD91CF992202666C00C8F9DF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF982202666C00C8F9DF /* Strings.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		CD91CF6B2201FF7000C8F9DF /* iOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DemoUITests.swift; sourceTree = "<group>"; };
 		CD91CF712201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD91CF95220263F600C8F9DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD91CF982202666C00C8F9DF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,7 @@
 		CD91CF4E2201FF6D00C8F9DF /* iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CD91CF8C2202635900C8F9DF /* Resources */,
 				CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */,
 				CD91CF512201FF6D00C8F9DF /* ViewController.swift */,
 				CD91CF532201FF6D00C8F9DF /* Main.storyboard */,
@@ -155,6 +160,15 @@
 			path = "iOS-DemoUITests";
 			sourceTree = "<group>";
 		};
+		CD91CF8C2202635900C8F9DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF96220263F600C8F9DF /* Localizable.strings */,
+				CD91CF982202666C00C8F9DF /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E4BA72B3B342CFEDD8F7BB47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,11 +187,12 @@
 			buildConfigurationList = CD91CF742201FF7000C8F9DF /* Build configuration list for PBXNativeTarget "iOS-Demo" */;
 			buildPhases = (
 				C845FB60EFC9CD99CECCC401 /* [CP] Check Pods Manifest.lock */,
+				CD91CF972202646D00C8F9DF /* Generate Resources */,
 				CD91CF482201FF6D00C8F9DF /* Sources */,
 				CD91CF492201FF6D00C8F9DF /* Frameworks */,
 				CD91CF4A2201FF6D00C8F9DF /* Resources */,
 				C16095B72BB1C61D0F1A255A /* [CP] Embed Pods Frameworks */,
-				CD91CF7E2202371500C8F9DF /* ShellScript */,
+				CD91CF7E2202371500C8F9DF /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -275,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD91CF5A2201FF7000C8F9DF /* LaunchScreen.storyboard in Resources */,
+				CD91CF94220263F600C8F9DF /* Localizable.strings in Resources */,
 				CD91CF572201FF7000C8F9DF /* Assets.xcassets in Resources */,
 				CD91CF552201FF6D00C8F9DF /* Main.storyboard in Resources */,
 			);
@@ -385,7 +401,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD91CF7E2202371500C8F9DF /* ShellScript */ = {
+		CD91CF7E2202371500C8F9DF /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,6 +410,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Swiftlint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -401,6 +418,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n    \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CD91CF972202646D00C8F9DF /* Generate Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$SRCROOT/iOS-Demo/Resources/en.lproj/Localizable.strings",
+			);
+			name = "Generate Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/iOS-Demo/Resources/Strings.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which ${PODS_ROOT}/SwiftGen/bin/swiftgen >/dev/null; then\n    \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\necho \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -410,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD91CF522201FF6D00C8F9DF /* ViewController.swift in Sources */,
+				CD91CF992202666C00C8F9DF /* Strings.swift in Sources */,
 				CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +498,14 @@
 				CD91CF592201FF7000C8F9DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD91CF96220263F600C8F9DF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD91CF95220263F600C8F9DF /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

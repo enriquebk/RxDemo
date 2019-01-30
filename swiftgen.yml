@@ -1,0 +1,5 @@
+strings:
+  inputs: iOS-Demo/Resources/en.lproj/Localizable.strings 
+  outputs:
+    - templateName: structured-swift4
+      output: iOS-Demo/Resources/Strings.swift
