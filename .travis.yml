@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10.1
+script: xcodebuild -workspace iOS-Demo.xcworkspace -scheme iOS-Demo -destination 'platform=iOS Simulator,name=iPhone X' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
