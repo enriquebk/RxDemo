@@ -1,0 +1,3 @@
+language: objective-c
+osx_image: xcode10.1
+script: xcodebuild -workspace iOS-Demo.xcworkspace -scheme iOS-Demo 
