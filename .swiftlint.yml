@@ -1,0 +1,12 @@
+opt_in_rules:
+  - force_unwrapping
+
+disabled_rules:
+ - nesting
+ - class_delegate_protocol
+ - type_name
+
+excluded:
+  - Pods
+
+force_unwrapping: error
