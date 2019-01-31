@@ -20,7 +20,7 @@ class FakeViewModelCoordinator: ViewModel, CoordinatorManager {
     var coordinator: Coordinator<FakeRoute>!
 }
 
-class FakeViewController: UIViewController, MVVMView  {
+class FakeViewController: UIViewController, MVVMView {
     var viewModel: FakeViewModelCoordinator!
     
     func bindViewModel() { }
