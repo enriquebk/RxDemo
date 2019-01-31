@@ -11,7 +11,7 @@ import XCTest
 
 class MVVMViewTests: XCTestCase {
 
-     let fakeViewModel = FakeViewModel()
+    let fakeViewModel = FakeViewModel()
     
     func testUIViewBinding() {
        
