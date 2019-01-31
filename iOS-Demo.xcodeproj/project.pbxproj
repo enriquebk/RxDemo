@@ -18,6 +18,11 @@
 		CD91CF702201FF7000C8F9DF /* iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */; };
 		CD91CF94220263F600C8F9DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF96220263F600C8F9DF /* Localizable.strings */; };
 		CD91CF992202666C00C8F9DF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF982202666C00C8F9DF /* Strings.swift */; };
+		CD91CF9C2202F7FA00C8F9DF /* MVVMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF9B2202F7FA00C8F9DF /* MVVMView.swift */; };
+		CD91CFA02202F85500C8F9DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF9F2202F85500C8F9DF /* Coordinator.swift */; };
+		CD91CFA22202F87600C8F9DF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFA12202F87600C8F9DF /* Route.swift */; };
+		CD91CFA42202F88E00C8F9DF /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFA32202F88E00C8F9DF /* Transition.swift */; };
+		CD91CFA62202F8C600C8F9DF /* MVVMCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFA52202F8C600C8F9DF /* MVVMCUtils.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +67,11 @@
 		CD91CF712201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD91CF95220263F600C8F9DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD91CF982202666C00C8F9DF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CD91CF9B2202F7FA00C8F9DF /* MVVMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMView.swift; sourceTree = "<group>"; };
+		CD91CF9F2202F85500C8F9DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CD91CFA12202F87600C8F9DF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CD91CFA32202F88E00C8F9DF /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		CD91CFA52202F8C600C8F9DF /* MVVMCUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCUtils.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				CD91CF8C2202635900C8F9DF /* Resources */,
+				CD91CF9A2202F7DA00C8F9DF /* MVVM-C */,
 				CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */,
 				CD91CF512201FF6D00C8F9DF /* ViewController.swift */,
 				CD91CF532201FF6D00C8F9DF /* Main.storyboard */,
@@ -167,6 +178,34 @@
 				CD91CF982202666C00C8F9DF /* Strings.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD91CF9A2202F7DA00C8F9DF /* MVVM-C */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF9D2202F82500C8F9DF /* MVVM */,
+				CD91CF9E2202F83100C8F9DF /* Coordinator */,
+				CD91CFA52202F8C600C8F9DF /* MVVMCUtils.swift */,
+			);
+			path = "MVVM-C";
+			sourceTree = "<group>";
+		};
+		CD91CF9D2202F82500C8F9DF /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF9B2202F7FA00C8F9DF /* MVVMView.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		CD91CF9E2202F83100C8F9DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF9F2202F85500C8F9DF /* Coordinator.swift */,
+				CD91CFA12202F87600C8F9DF /* Route.swift */,
+				CD91CFA32202F88E00C8F9DF /* Transition.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		E4BA72B3B342CFEDD8F7BB47 /* Frameworks */ = {
@@ -446,8 +485,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD91CFA42202F88E00C8F9DF /* Transition.swift in Sources */,
 				CD91CF522201FF6D00C8F9DF /* ViewController.swift in Sources */,
 				CD91CF992202666C00C8F9DF /* Strings.swift in Sources */,
+				CD91CFA02202F85500C8F9DF /* Coordinator.swift in Sources */,
+				CD91CFA22202F87600C8F9DF /* Route.swift in Sources */,
+				CD91CFA62202F8C600C8F9DF /* MVVMCUtils.swift in Sources */,
+				CD91CF9C2202F7FA00C8F9DF /* MVVMView.swift in Sources */,
 				CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
