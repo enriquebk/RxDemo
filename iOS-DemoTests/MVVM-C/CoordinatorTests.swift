@@ -60,7 +60,7 @@ class CoordinatorTests: XCTestCase {
             let from = transition.from as? UIViewController {
             XCTAssertTrue(from === root)
         } else {
-            XCTFail("An error has occurred when accesing returnedTransition")
+            XCTFail("An error has occurred when accessing `returnedTransition`")
         }
     }
 }
