@@ -9,8 +9,6 @@
 import UIKit
 @testable import iOS_Demo
 
-class FakeViewModel: ViewModel { }
-
 class ViewControllerMVVMViewMock: UIViewController, MVVMView {
 
     var viewModel: FakeViewModel!

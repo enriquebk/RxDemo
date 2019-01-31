@@ -9,26 +9,6 @@
 import XCTest
 @testable import iOS_Demo
 
-class TransitionMock: Transition {
-    var from: Presentable?
-    
-    func execute(from presentable: Presentable) {
-        from = presentable
-    }
-}
-
-class RouteMock: Route {
-    var didCallGetTransition = false
-    var returnedTransition: TransitionMock?
-    
-    func getTransition() -> Transition {
-        didCallGetTransition = true
-        let transition = TransitionMock()
-        returnedTransition = transition
-        return transition
-    }
-}
-
 class CoordinatorTests: XCTestCase {
 
     var root: UIViewController!
