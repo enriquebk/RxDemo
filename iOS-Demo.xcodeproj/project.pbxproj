@@ -10,14 +10,36 @@
 		670C99CF61374AC416499FE8 /* Pods_iOS_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1E8C5F91D9F7A36F2A9A78 /* Pods_iOS_DemoTests.framework */; };
 		69BC48B92E90511D2CF807F4 /* Pods_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726F412984BD073F0FD56C51 /* Pods_iOS_Demo.framework */; };
 		CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */; };
-		CD91CF522201FF6D00C8F9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF512201FF6D00C8F9DF /* ViewController.swift */; };
-		CD91CF552201FF6D00C8F9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF532201FF6D00C8F9DF /* Main.storyboard */; };
 		CD91CF572201FF7000C8F9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF562201FF7000C8F9DF /* Assets.xcassets */; };
 		CD91CF5A2201FF7000C8F9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF582201FF7000C8F9DF /* LaunchScreen.storyboard */; };
-		CD91CF652201FF7000C8F9DF /* iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */; };
 		CD91CF702201FF7000C8F9DF /* iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */; };
 		CD91CF94220263F600C8F9DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF96220263F600C8F9DF /* Localizable.strings */; };
 		CD91CF992202666C00C8F9DF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF982202666C00C8F9DF /* Strings.swift */; };
+		CD91CF9C2202F7FA00C8F9DF /* MVVMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF9B2202F7FA00C8F9DF /* MVVMView.swift */; };
+		CD91CFA02202F85500C8F9DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF9F2202F85500C8F9DF /* Coordinator.swift */; };
+		CD91CFA22202F87600C8F9DF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFA12202F87600C8F9DF /* Route.swift */; };
+		CD91CFA42202F88E00C8F9DF /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFA32202F88E00C8F9DF /* Transition.swift */; };
+		CD91CFA62202F8C600C8F9DF /* MVVMCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFA52202F8C600C8F9DF /* MVVMCUtils.swift */; };
+		CD91CFAC2202FFD700C8F9DF /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFAB2202FFD700C8F9DF /* MainNavigationController.swift */; };
+		CD91CFB12203011500C8F9DF /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFAF2203011500C8F9DF /* PostsViewController.swift */; };
+		CD91CFB22203011500C8F9DF /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFB02203011500C8F9DF /* PostsViewController.xib */; };
+		CD91CFB82203060600C8F9DF /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFB72203060600C8F9DF /* PostsViewModel.swift */; };
+		CD91CFBB2203067000C8F9DF /* PostsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBA2203067000C8F9DF /* PostsRoute.swift */; };
+		CD91CFBD2203068A00C8F9DF /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBC2203068A00C8F9DF /* PostDetailsViewModel.swift */; };
+		CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */; };
+		CD91CFC22203070500C8F9DF /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */; };
+		CD91CFC32203070500C8F9DF /* PostDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */; };
+		CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */; };
+		CD91CFC822030D6E00C8F9DF /* MVVMViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC722030D6E00C8F9DF /* MVVMViewMock.swift */; };
+		CD91CFCE22031FCF00C8F9DF /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFCD22031FCF00C8F9DF /* CoordinatorTests.swift */; };
+		CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFCF22034C1300C8F9DF /* NavigationTransitionTests.swift */; };
+		CD91CFD422035B4300C8F9DF /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFD322035B4300C8F9DF /* UINavigationControllerMock.swift */; };
+		CD91CFD622035B6100C8F9DF /* UIViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFD522035B6100C8F9DF /* UIViewControllerMock.swift */; };
+		CD91CFD822035B8E00C8F9DF /* TransitionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFD722035B8E00C8F9DF /* TransitionMock.swift */; };
+		CD91CFDA22035BA300C8F9DF /* RouteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFD922035BA300C8F9DF /* RouteMock.swift */; };
+		CD91CFDC22035BE700C8F9DF /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFDB22035BE700C8F9DF /* FakeViewModel.swift */; };
+		CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFDD22035CB800C8F9DF /* FakeViewModelCoordinator.swift */; };
+		CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFE322035D7C00C8F9DF /* MVVMCUtilsTests.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,19 +71,41 @@
 		9CC8D861D9C0C1D5C2A26B10 /* Pods-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD91CF4C2201FF6D00C8F9DF /* iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD91CF512201FF6D00C8F9DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD91CF542201FF6D00C8F9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD91CF562201FF7000C8F9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD91CF592201FF7000C8F9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD91CF5B2201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD91CF602201FF7000C8F9DF /* iOS-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DemoTests.swift; sourceTree = "<group>"; };
 		CD91CF662201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD91CF6B2201FF7000C8F9DF /* iOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DemoUITests.swift; sourceTree = "<group>"; };
 		CD91CF712201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD91CF95220263F600C8F9DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD91CF982202666C00C8F9DF /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CD91CF9B2202F7FA00C8F9DF /* MVVMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMView.swift; sourceTree = "<group>"; };
+		CD91CF9F2202F85500C8F9DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CD91CFA12202F87600C8F9DF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CD91CFA32202F88E00C8F9DF /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		CD91CFA52202F8C600C8F9DF /* MVVMCUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCUtils.swift; sourceTree = "<group>"; };
+		CD91CFAB2202FFD700C8F9DF /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		CD91CFAF2203011500C8F9DF /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		CD91CFB02203011500C8F9DF /* PostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
+		CD91CFB72203060600C8F9DF /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		CD91CFBA2203067000C8F9DF /* PostsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRoute.swift; sourceTree = "<group>"; };
+		CD91CFBC2203068A00C8F9DF /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
+		CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsRoute.swift; sourceTree = "<group>"; };
+		CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailsViewController.xib; sourceTree = "<group>"; };
+		CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewTests.swift; sourceTree = "<group>"; };
+		CD91CFC722030D6E00C8F9DF /* MVVMViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewMock.swift; sourceTree = "<group>"; };
+		CD91CFCD22031FCF00C8F9DF /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		CD91CFCF22034C1300C8F9DF /* NavigationTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransitionTests.swift; sourceTree = "<group>"; };
+		CD91CFD322035B4300C8F9DF /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
+		CD91CFD522035B6100C8F9DF /* UIViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerMock.swift; sourceTree = "<group>"; };
+		CD91CFD722035B8E00C8F9DF /* TransitionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionMock.swift; sourceTree = "<group>"; };
+		CD91CFD922035BA300C8F9DF /* RouteMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMock.swift; sourceTree = "<group>"; };
+		CD91CFDB22035BE700C8F9DF /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
+		CD91CFDD22035CB800C8F9DF /* FakeViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModelCoordinator.swift; sourceTree = "<group>"; };
+		CD91CFE322035D7C00C8F9DF /* MVVMCUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCUtilsTests.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,9 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				CD91CF8C2202635900C8F9DF /* Resources */,
+				CD91CF9A2202F7DA00C8F9DF /* MVVM-C */,
+				CD91CFB92203062C00C8F9DF /* Routes */,
+				CD91CFA82202FF9600C8F9DF /* Screens */,
 				CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */,
-				CD91CF512201FF6D00C8F9DF /* ViewController.swift */,
-				CD91CF532201FF6D00C8F9DF /* Main.storyboard */,
 				CD91CF562201FF7000C8F9DF /* Assets.xcassets */,
 				CD91CF582201FF7000C8F9DF /* LaunchScreen.storyboard */,
 				CD91CF5B2201FF7000C8F9DF /* Info.plist */,
@@ -145,7 +190,7 @@
 		CD91CF632201FF7000C8F9DF /* iOS-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */,
+				CD91CFC422030AF000C8F9DF /* MVVM-C */,
 				CD91CF662201FF7000C8F9DF /* Info.plist */,
 			);
 			path = "iOS-DemoTests";
@@ -167,6 +212,99 @@
 				CD91CF982202666C00C8F9DF /* Strings.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD91CF9A2202F7DA00C8F9DF /* MVVM-C */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF9D2202F82500C8F9DF /* MVVM */,
+				CD91CF9E2202F83100C8F9DF /* Coordinator */,
+				CD91CFA52202F8C600C8F9DF /* MVVMCUtils.swift */,
+			);
+			path = "MVVM-C";
+			sourceTree = "<group>";
+		};
+		CD91CF9D2202F82500C8F9DF /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF9B2202F7FA00C8F9DF /* MVVMView.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		CD91CF9E2202F83100C8F9DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CF9F2202F85500C8F9DF /* Coordinator.swift */,
+				CD91CFA12202F87600C8F9DF /* Route.swift */,
+				CD91CFA32202F88E00C8F9DF /* Transition.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CD91CFA82202FF9600C8F9DF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFAB2202FFD700C8F9DF /* MainNavigationController.swift */,
+				CD91CFAD2203007F00C8F9DF /* PostsScreen */,
+				CD91CFAE2203009100C8F9DF /* PostDetailsScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CD91CFAD2203007F00C8F9DF /* PostsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFAF2203011500C8F9DF /* PostsViewController.swift */,
+				CD91CFB02203011500C8F9DF /* PostsViewController.xib */,
+				CD91CFB72203060600C8F9DF /* PostsViewModel.swift */,
+			);
+			path = PostsScreen;
+			sourceTree = "<group>";
+		};
+		CD91CFAE2203009100C8F9DF /* PostDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */,
+				CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */,
+				CD91CFBC2203068A00C8F9DF /* PostDetailsViewModel.swift */,
+			);
+			path = PostDetailsScreen;
+			sourceTree = "<group>";
+		};
+		CD91CFB92203062C00C8F9DF /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFBA2203067000C8F9DF /* PostsRoute.swift */,
+				CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		CD91CFC422030AF000C8F9DF /* MVVM-C */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFD222035B2100C8F9DF /* TestDoubles */,
+				CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */,
+				CD91CFCD22031FCF00C8F9DF /* CoordinatorTests.swift */,
+				CD91CFCF22034C1300C8F9DF /* NavigationTransitionTests.swift */,
+				CD91CFE322035D7C00C8F9DF /* MVVMCUtilsTests.swift */,
+			);
+			path = "MVVM-C";
+			sourceTree = "<group>";
+		};
+		CD91CFD222035B2100C8F9DF /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFDB22035BE700C8F9DF /* FakeViewModel.swift */,
+				CD91CFC722030D6E00C8F9DF /* MVVMViewMock.swift */,
+				CD91CFD322035B4300C8F9DF /* UINavigationControllerMock.swift */,
+				CD91CFD522035B6100C8F9DF /* UIViewControllerMock.swift */,
+				CD91CFD722035B8E00C8F9DF /* TransitionMock.swift */,
+				CD91CFD922035BA300C8F9DF /* RouteMock.swift */,
+				CD91CFDD22035CB800C8F9DF /* FakeViewModelCoordinator.swift */,
+			);
+			path = TestDoubles;
 			sourceTree = "<group>";
 		};
 		E4BA72B3B342CFEDD8F7BB47 /* Frameworks */ = {
@@ -289,10 +427,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD91CFC32203070500C8F9DF /* PostDetailsViewController.xib in Resources */,
 				CD91CF5A2201FF7000C8F9DF /* LaunchScreen.storyboard in Resources */,
 				CD91CF94220263F600C8F9DF /* Localizable.strings in Resources */,
 				CD91CF572201FF7000C8F9DF /* Assets.xcassets in Resources */,
-				CD91CF552201FF6D00C8F9DF /* Main.storyboard in Resources */,
+				CD91CFB22203011500C8F9DF /* PostsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +585,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD91CF522201FF6D00C8F9DF /* ViewController.swift in Sources */,
+				CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */,
+				CD91CFA42202F88E00C8F9DF /* Transition.swift in Sources */,
 				CD91CF992202666C00C8F9DF /* Strings.swift in Sources */,
+				CD91CFAC2202FFD700C8F9DF /* MainNavigationController.swift in Sources */,
+				CD91CFBB2203067000C8F9DF /* PostsRoute.swift in Sources */,
+				CD91CFB12203011500C8F9DF /* PostsViewController.swift in Sources */,
+				CD91CFA02202F85500C8F9DF /* Coordinator.swift in Sources */,
+				CD91CFA22202F87600C8F9DF /* Route.swift in Sources */,
+				CD91CFB82203060600C8F9DF /* PostsViewModel.swift in Sources */,
+				CD91CFC22203070500C8F9DF /* PostDetailsViewController.swift in Sources */,
+				CD91CFBD2203068A00C8F9DF /* PostDetailsViewModel.swift in Sources */,
+				CD91CFA62202F8C600C8F9DF /* MVVMCUtils.swift in Sources */,
+				CD91CF9C2202F7FA00C8F9DF /* MVVMView.swift in Sources */,
 				CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +606,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD91CF652201FF7000C8F9DF /* iOS_DemoTests.swift in Sources */,
+				CD91CFD622035B6100C8F9DF /* UIViewControllerMock.swift in Sources */,
+				CD91CFD822035B8E00C8F9DF /* TransitionMock.swift in Sources */,
+				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
+				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,
+				CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */,
+				CD91CFDA22035BA300C8F9DF /* RouteMock.swift in Sources */,
+				CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */,
+				CD91CFD422035B4300C8F9DF /* UINavigationControllerMock.swift in Sources */,
+				CD91CFC822030D6E00C8F9DF /* MVVMViewMock.swift in Sources */,
+				CD91CFDC22035BE700C8F9DF /* FakeViewModel.swift in Sources */,
+				CD91CFCE22031FCF00C8F9DF /* CoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,14 +644,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD91CF532201FF6D00C8F9DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD91CF542201FF6D00C8F9DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD91CF582201FF7000C8F9DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
