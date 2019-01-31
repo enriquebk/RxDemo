@@ -39,6 +39,7 @@
 		CD91CFDA22035BA300C8F9DF /* RouteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFD922035BA300C8F9DF /* RouteMock.swift */; };
 		CD91CFDC22035BE700C8F9DF /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFDB22035BE700C8F9DF /* FakeViewModel.swift */; };
 		CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFDD22035CB800C8F9DF /* FakeViewModelCoordinator.swift */; };
+		CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFE322035D7C00C8F9DF /* MVVMCUtilsTests.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		CD91CFD922035BA300C8F9DF /* RouteMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMock.swift; sourceTree = "<group>"; };
 		CD91CFDB22035BE700C8F9DF /* FakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
 		CD91CFDD22035CB800C8F9DF /* FakeViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewModelCoordinator.swift; sourceTree = "<group>"; };
+		CD91CFE322035D7C00C8F9DF /* MVVMCUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCUtilsTests.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,6 +288,7 @@
 				CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */,
 				CD91CFCD22031FCF00C8F9DF /* CoordinatorTests.swift */,
 				CD91CFCF22034C1300C8F9DF /* NavigationTransitionTests.swift */,
+				CD91CFE322035D7C00C8F9DF /* MVVMCUtilsTests.swift */,
 			);
 			path = "MVVM-C";
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				CD91CFD822035B8E00C8F9DF /* TransitionMock.swift in Sources */,
 				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
 				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,
+				CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */,
 				CD91CFDA22035BA300C8F9DF /* RouteMock.swift in Sources */,
 				CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */,
 				CD91CFD422035B4300C8F9DF /* UINavigationControllerMock.swift in Sources */,

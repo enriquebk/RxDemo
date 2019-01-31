@@ -6,6 +6,7 @@
 //  Copyright © 2019 Enrique Bermudez. All rights reserved.
 //
 
+import UIKit
 @testable import iOS_Demo
 
 class FakeRoute: Route {
@@ -17,4 +18,10 @@ class FakeRoute: Route {
 class FakeViewModelCoordinator: ViewModel, CoordinatorManager {
     
     var coordinator: Coordinator<FakeRoute>!
+}
+
+class FakeViewController: UIViewController, MVVMView  {
+    var viewModel: FakeViewModelCoordinator!
+    
+    func bindViewModel() { }
 }
