@@ -5,6 +5,7 @@ disabled_rules:
  - nesting
  - class_delegate_protocol
  - type_name
+ - trailing_whitespace
 
 excluded:
   - Pods
