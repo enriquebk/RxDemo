@@ -12,7 +12,6 @@
 		CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */; };
 		CD91CF572201FF7000C8F9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF562201FF7000C8F9DF /* Assets.xcassets */; };
 		CD91CF5A2201FF7000C8F9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF582201FF7000C8F9DF /* LaunchScreen.storyboard */; };
-		CD91CF652201FF7000C8F9DF /* iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */; };
 		CD91CF702201FF7000C8F9DF /* iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */; };
 		CD91CF94220263F600C8F9DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF96220263F600C8F9DF /* Localizable.strings */; };
 		CD91CF992202666C00C8F9DF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF982202666C00C8F9DF /* Strings.swift */; };
@@ -30,6 +29,8 @@
 		CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */; };
 		CD91CFC22203070500C8F9DF /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */; };
 		CD91CFC32203070500C8F9DF /* PostDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */; };
+		CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */; };
+		CD91CFC822030D6E00C8F9DF /* MVVMViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC722030D6E00C8F9DF /* MVVMViewMock.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +66,6 @@
 		CD91CF592201FF7000C8F9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD91CF5B2201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD91CF602201FF7000C8F9DF /* iOS-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DemoTests.swift; sourceTree = "<group>"; };
 		CD91CF662201FF7000C8F9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD91CF6B2201FF7000C8F9DF /* iOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91CF6F2201FF7000C8F9DF /* iOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DemoUITests.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsRoute.swift; sourceTree = "<group>"; };
 		CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
 		CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailsViewController.xib; sourceTree = "<group>"; };
+		CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewTests.swift; sourceTree = "<group>"; };
+		CD91CFC722030D6E00C8F9DF /* MVVMViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewMock.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,7 +172,7 @@
 		CD91CF632201FF7000C8F9DF /* iOS-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD91CF642201FF7000C8F9DF /* iOS_DemoTests.swift */,
+				CD91CFC422030AF000C8F9DF /* MVVM-C */,
 				CD91CF662201FF7000C8F9DF /* Info.plist */,
 			);
 			path = "iOS-DemoTests";
@@ -259,6 +261,15 @@
 				CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */,
 			);
 			path = Routes;
+			sourceTree = "<group>";
+		};
+		CD91CFC422030AF000C8F9DF /* MVVM-C */ = {
+			isa = PBXGroup;
+			children = (
+				CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */,
+				CD91CFC722030D6E00C8F9DF /* MVVMViewMock.swift */,
+			);
+			path = "MVVM-C";
 			sourceTree = "<group>";
 		};
 		E4BA72B3B342CFEDD8F7BB47 /* Frameworks */ = {
@@ -560,7 +571,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD91CF652201FF7000C8F9DF /* iOS_DemoTests.swift in Sources */,
+				CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */,
+				CD91CFC822030D6E00C8F9DF /* MVVMViewMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
