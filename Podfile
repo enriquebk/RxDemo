@@ -8,7 +8,9 @@ pod 'SwiftGen'
 target 'iOS-Demo' do
 
   pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'RealmSwift'
+  pod 'Hippolyte'
 
   target 'iOS-DemoTests' do
     inherit! :search_paths

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		670C99CF61374AC416499FE8 /* Pods_iOS_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1E8C5F91D9F7A36F2A9A78 /* Pods_iOS_DemoTests.framework */; };
 		69BC48B92E90511D2CF807F4 /* Pods_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726F412984BD073F0FD56C51 /* Pods_iOS_Demo.framework */; };
+		CD810BD922044FD400D56D80 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BD822044FD400D56D80 /* APIClient.swift */; };
+		CD810BDB220455DD00D56D80 /* APIFetchableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDA220455DD00D56D80 /* APIFetchableElement.swift */; };
+		CD810BDD22046F8200D56D80 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDC22046F8200D56D80 /* APIRequest.swift */; };
+		CD810BDF2204770500D56D80 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDE2204770500D56D80 /* Persistable.swift */; };
 		CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */; };
 		CD91CF572201FF7000C8F9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF562201FF7000C8F9DF /* Assets.xcassets */; };
 		CD91CF5A2201FF7000C8F9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD91CF582201FF7000C8F9DF /* LaunchScreen.storyboard */; };
@@ -43,6 +47,11 @@
 		CD91CFEA22038E8500C8F9DF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFE922038E8500C8F9DF /* Post.swift */; };
 		CD91CFEC220390E900C8F9DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFEB220390E900C8F9DF /* User.swift */; };
 		CD91CFEE220390FA00C8F9DF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFED220390FA00C8F9DF /* Comment.swift */; };
+		CDA197772204A0E500345C76 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197722204A0E500345C76 /* comments.json */; };
+		CDA197782204A0E500345C76 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197732204A0E500345C76 /* users.json */; };
+		CDA197792204A0E500345C76 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197742204A0E500345C76 /* posts.json */; };
+		CDA1977A2204A0E500345C76 /* APIFetchableElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */; };
+		CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197762204A0E500345C76 /* APIRequestTests.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +81,10 @@
 		8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9511C8FDFCCE512FC0BCAA22 /* Pods-iOS-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-DemoTests/Pods-iOS-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CC8D861D9C0C1D5C2A26B10 /* Pods-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD810BD822044FD400D56D80 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CD810BDA220455DD00D56D80 /* APIFetchableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetchableElement.swift; sourceTree = "<group>"; };
+		CD810BDC22046F8200D56D80 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		CD810BDE2204770500D56D80 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
 		CD91CF4C2201FF6D00C8F9DF /* iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD91CF562201FF7000C8F9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +125,11 @@
 		CD91CFE922038E8500C8F9DF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD91CFEB220390E900C8F9DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD91CFED220390FA00C8F9DF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		CDA197722204A0E500345C76 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
+		CDA197732204A0E500345C76 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		CDA197742204A0E500345C76 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFetchableElementTests.swift; sourceTree = "<group>"; };
+		CDA197762204A0E500345C76 /* APIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +174,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CD810BD52203BD1900D56D80 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				CD810BD822044FD400D56D80 /* APIClient.swift */,
+				CD810BDC22046F8200D56D80 /* APIRequest.swift */,
+				CD810BDA220455DD00D56D80 /* APIFetchableElement.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
 		CD91CF432201FF6D00C8F9DF = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CD91CF8C2202635900C8F9DF /* Resources */,
+				CD810BD52203BD1900D56D80 /* APIClient */,
 				CD91CF9A2202F7DA00C8F9DF /* MVVM-C */,
 				CD91CFB92203062C00C8F9DF /* Routes */,
 				CD91CFE822038E6800C8F9DF /* Model */,
@@ -197,6 +226,7 @@
 		CD91CF632201FF7000C8F9DF /* iOS-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDA197702204A0E500345C76 /* APIClient */,
 				CD91CFC422030AF000C8F9DF /* MVVM-C */,
 				CD91CF662201FF7000C8F9DF /* Info.plist */,
 			);
@@ -317,11 +347,32 @@
 		CD91CFE822038E6800C8F9DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD810BDE2204770500D56D80 /* Persistable.swift */,
 				CD91CFE922038E8500C8F9DF /* Post.swift */,
 				CD91CFEB220390E900C8F9DF /* User.swift */,
 				CD91CFED220390FA00C8F9DF /* Comment.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CDA197702204A0E500345C76 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				CDA197712204A0E500345C76 /* Responses */,
+				CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */,
+				CDA197762204A0E500345C76 /* APIRequestTests.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		CDA197712204A0E500345C76 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				CDA197722204A0E500345C76 /* comments.json */,
+				CDA197732204A0E500345C76 /* users.json */,
+				CDA197742204A0E500345C76 /* posts.json */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		E4BA72B3B342CFEDD8F7BB47 /* Frameworks */ = {
@@ -456,6 +507,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA197782204A0E500345C76 /* users.json in Resources */,
+				CDA197792204A0E500345C76 /* posts.json in Resources */,
+				CDA197772204A0E500345C76 /* comments.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,16 +576,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hippolyte/Hippolyte.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hippolyte.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,8 +670,12 @@
 				CD91CFAC2202FFD700C8F9DF /* MainNavigationController.swift in Sources */,
 				CD91CFEC220390E900C8F9DF /* User.swift in Sources */,
 				CD91CFEE220390FA00C8F9DF /* Comment.swift in Sources */,
+				CD810BD922044FD400D56D80 /* APIClient.swift in Sources */,
 				CD91CFBB2203067000C8F9DF /* PostsRoute.swift in Sources */,
 				CD91CFB12203011500C8F9DF /* PostsViewController.swift in Sources */,
+				CD810BDB220455DD00D56D80 /* APIFetchableElement.swift in Sources */,
+				CD810BDF2204770500D56D80 /* Persistable.swift in Sources */,
+				CD810BDD22046F8200D56D80 /* APIRequest.swift in Sources */,
 				CD91CFA02202F85500C8F9DF /* Coordinator.swift in Sources */,
 				CD91CFA22202F87600C8F9DF /* Route.swift in Sources */,
 				CD91CFB82203060600C8F9DF /* PostsViewModel.swift in Sources */,
@@ -632,7 +694,9 @@
 			files = (
 				CD91CFD622035B6100C8F9DF /* UIViewControllerMock.swift in Sources */,
 				CD91CFD822035B8E00C8F9DF /* TransitionMock.swift in Sources */,
+				CDA1977A2204A0E500345C76 /* APIFetchableElementTests.swift in Sources */,
 				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
+				CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */,
 				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,
 				CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */,
 				CD91CFDA22035BA300C8F9DF /* RouteMock.swift in Sources */,

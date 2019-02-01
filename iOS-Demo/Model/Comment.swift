@@ -9,10 +9,10 @@
 import UIKit
 import RealmSwift
 
-class Comment: Object {
+final class Comment: Object, Persistable, Decodable {
 
+    @objc dynamic var id: Int64 = 0
     @objc dynamic var postId: Int64 = 0
-    @objc dynamic var commentId: Int64 = 0
     @objc dynamic var name: String = ""
     @objc dynamic var email: String = ""
     @objc dynamic var body: String = ""
