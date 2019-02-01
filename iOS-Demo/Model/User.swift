@@ -10,16 +10,16 @@ import UIKit
 import RealmSwift
 import CoreLocation
 
-class User: Object {
+final class User: Object, Persistable {
 
-    @objc dynamic var userId: Int64 = 0
+    @objc dynamic var id: Int64 = 0
     @objc dynamic var name: String = ""
     @objc dynamic var username: String = ""
     @objc dynamic var email: String = ""
     @objc dynamic var phone: String = ""
     @objc dynamic var website: String = ""
-    @objc dynamic var address = Address()
-    @objc dynamic var company = Company()
+    @objc dynamic var address: Address?
+    @objc dynamic var company: Company?
     
 }
 
@@ -29,7 +29,7 @@ class Address: Object {
     @objc dynamic var suite: String = ""
     @objc dynamic var city: String = ""
     @objc dynamic var zipcode: String = ""
-    @objc dynamic var location = Location()
+    @objc dynamic var location: Location?
     
 }
 

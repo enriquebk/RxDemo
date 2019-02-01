@@ -7,6 +7,14 @@ disabled_rules:
  - type_name
  - trailing_whitespace
 
+identifier_name:
+  min_length: 3 
+  max_length:
+    warning: 40
+    error: 50
+  excluded: # excluded via string array
+    - id
+
 excluded:
   - Pods
 

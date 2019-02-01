@@ -9,10 +9,14 @@
 import Foundation
 import RealmSwift
 
-class Post: Object {
+final class Post: Object, Persistable {
 
-    @objc dynamic var postId: Int64 = 0
+    @objc dynamic var id: Int64 = 0
     @objc dynamic var userId: Int64 = 0
     @objc dynamic var title: String = ""
     @objc dynamic var body: String = ""
+    
+    static func fetchRequest() -> APIRequest {
+        return .posts
+    }
 }
