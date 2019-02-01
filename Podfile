@@ -8,6 +8,7 @@ pod 'SwiftGen'
 target 'iOS-Demo' do
 
   pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'RealmSwift'
 
   target 'iOS-DemoTests' do
