@@ -28,3 +28,21 @@ extension APIFetchableElement where Self: Decodable {
         })
     }
 }
+
+extension User: APIFetchableElement {
+    static func fetchRequest() -> APIRequest {
+        return .users
+    }
+}
+
+extension Post: APIFetchableElement {
+    static func fetchRequest() -> APIRequest {
+        return .posts
+    }
+}
+
+extension Comment: APIFetchableElement {
+    static func fetchRequest() -> APIRequest {
+        return .comments
+    }
+}

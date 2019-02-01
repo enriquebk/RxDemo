@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import CoreLocation
 
-final class User: Object, Persistable {
+final class User: Object, Persistable, Decodable {
 
     @objc dynamic var id: Int64 = 0
     @objc dynamic var name: String = ""
@@ -23,29 +23,32 @@ final class User: Object, Persistable {
     
 }
 
-class Address: Object {
+class Address: Object, Decodable {
 
     @objc dynamic var street: String = ""
     @objc dynamic var suite: String = ""
     @objc dynamic var city: String = ""
     @objc dynamic var zipcode: String = ""
-    @objc dynamic var location: Location?
+    @objc dynamic var geo: Location?
     
 }
 
-class Location: Object {
-    @objc dynamic var latitude: Double = 0.0
-    @objc dynamic var longitude: Double = 0.0
+class Location: Object, Decodable {
+    @objc private dynamic var lat: String = ""
+    @objc private dynamic var lng: String = ""
     
     var coordinate: CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(
-            latitude: latitude,
-            longitude: longitude)
+        if let latitude = Double(self.lat), let longitude = Double(self.lng) {
+            return CLLocationCoordinate2D(
+                latitude: latitude,
+                longitude: longitude)
+        }
+        return CLLocationCoordinate2D()
     }
 }
 
-class Company: Object {
+class Company: Object, Decodable {
     @objc dynamic var name: String = ""
     @objc dynamic var catchPhrase: String = ""
-    @objc dynamic var companyBS: String = ""
+    @objc dynamic var bs: String = ""
 }

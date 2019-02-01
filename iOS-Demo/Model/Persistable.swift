@@ -15,8 +15,8 @@ protocol Persistable {
 }
 
 extension Persistable where Self: Object {
+    
     static func fetchStoredElements() -> [Self]? {
-        
         do {
             let realm = try Realm()
             let persistedElements = realm.objects(Self.self)
