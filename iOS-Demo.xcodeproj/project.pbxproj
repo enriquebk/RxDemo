@@ -47,6 +47,11 @@
 		CD91CFEA22038E8500C8F9DF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFE922038E8500C8F9DF /* Post.swift */; };
 		CD91CFEC220390E900C8F9DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFEB220390E900C8F9DF /* User.swift */; };
 		CD91CFEE220390FA00C8F9DF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFED220390FA00C8F9DF /* Comment.swift */; };
+		CDA197772204A0E500345C76 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197722204A0E500345C76 /* comments.json */; };
+		CDA197782204A0E500345C76 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197732204A0E500345C76 /* users.json */; };
+		CDA197792204A0E500345C76 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197742204A0E500345C76 /* posts.json */; };
+		CDA1977A2204A0E500345C76 /* APIFetchableElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */; };
+		CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197762204A0E500345C76 /* APIRequestTests.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +125,11 @@
 		CD91CFE922038E8500C8F9DF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CD91CFEB220390E900C8F9DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD91CFED220390FA00C8F9DF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		CDA197722204A0E500345C76 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
+		CDA197732204A0E500345C76 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		CDA197742204A0E500345C76 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFetchableElementTests.swift; sourceTree = "<group>"; };
+		CDA197762204A0E500345C76 /* APIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +226,7 @@
 		CD91CF632201FF7000C8F9DF /* iOS-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDA197702204A0E500345C76 /* APIClient */,
 				CD91CFC422030AF000C8F9DF /* MVVM-C */,
 				CD91CF662201FF7000C8F9DF /* Info.plist */,
 			);
@@ -342,6 +353,26 @@
 				CD91CFED220390FA00C8F9DF /* Comment.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CDA197702204A0E500345C76 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				CDA197712204A0E500345C76 /* Responses */,
+				CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */,
+				CDA197762204A0E500345C76 /* APIRequestTests.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		CDA197712204A0E500345C76 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				CDA197722204A0E500345C76 /* comments.json */,
+				CDA197732204A0E500345C76 /* users.json */,
+				CDA197742204A0E500345C76 /* posts.json */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		E4BA72B3B342CFEDD8F7BB47 /* Frameworks */ = {
@@ -476,6 +507,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA197782204A0E500345C76 /* users.json in Resources */,
+				CDA197792204A0E500345C76 /* posts.json in Resources */,
+				CDA197772204A0E500345C76 /* comments.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +576,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hippolyte/Hippolyte.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -551,6 +586,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hippolyte.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -658,7 +694,9 @@
 			files = (
 				CD91CFD622035B6100C8F9DF /* UIViewControllerMock.swift in Sources */,
 				CD91CFD822035B8E00C8F9DF /* TransitionMock.swift in Sources */,
+				CDA1977A2204A0E500345C76 /* APIFetchableElementTests.swift in Sources */,
 				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
+				CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */,
 				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,
 				CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */,
 				CD91CFDA22035BA300C8F9DF /* RouteMock.swift in Sources */,

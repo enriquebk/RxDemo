@@ -1,4 +1,5 @@
 PODS:
+  - Hippolyte (0.5.0)
   - Realm (3.11.0):
     - Realm/Headers (= 3.11.0)
   - Realm/Headers (3.11.0)
@@ -11,6 +12,7 @@ PODS:
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
+  - Hippolyte
   - RealmSwift
   - RxCocoa
   - RxSwift
@@ -19,6 +21,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Hippolyte
     - Realm
     - RealmSwift
     - RxCocoa
@@ -27,6 +30,7 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Hippolyte: ac90c7dd71ae06470133ed7c1e12b80800f8bead
   Realm: 92f09a102692b96a9a10e9617f214f15c5ab85fc
   RealmSwift: 5f0481cd658bb751c509314b964a35eaa264d2cf
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
@@ -34,6 +38,6 @@ SPEC CHECKSUMS:
   SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 0c0bbb511ab93a7884be5d0e4e4c2fecc4c6ccfa
+PODFILE CHECKSUM: 3887f1a02c01d9152c1302f5755f231d3d58d947
 
 COCOAPODS: 1.5.3
