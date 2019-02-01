@@ -10,7 +10,7 @@
 		670C99CF61374AC416499FE8 /* Pods_iOS_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1E8C5F91D9F7A36F2A9A78 /* Pods_iOS_DemoTests.framework */; };
 		69BC48B92E90511D2CF807F4 /* Pods_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726F412984BD073F0FD56C51 /* Pods_iOS_Demo.framework */; };
 		CD810BD922044FD400D56D80 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BD822044FD400D56D80 /* APIClient.swift */; };
-		CD810BDB220455DD00D56D80 /* FetchElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDA220455DD00D56D80 /* FetchElement.swift */; };
+		CD810BDB220455DD00D56D80 /* APIFetchableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDA220455DD00D56D80 /* APIFetchableElement.swift */; };
 		CD810BDD22046F8200D56D80 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDC22046F8200D56D80 /* APIRequest.swift */; };
 		CD810BDF2204770500D56D80 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD810BDE2204770500D56D80 /* Persistable.swift */; };
 		CD91CF502201FF6D00C8F9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CF4F2201FF6D00C8F9DF /* AppDelegate.swift */; };
@@ -77,7 +77,7 @@
 		9511C8FDFCCE512FC0BCAA22 /* Pods-iOS-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-DemoTests/Pods-iOS-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CC8D861D9C0C1D5C2A26B10 /* Pods-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD810BD822044FD400D56D80 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		CD810BDA220455DD00D56D80 /* FetchElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchElement.swift; sourceTree = "<group>"; };
+		CD810BDA220455DD00D56D80 /* APIFetchableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetchableElement.swift; sourceTree = "<group>"; };
 		CD810BDC22046F8200D56D80 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		CD810BDE2204770500D56D80 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
 		CD91CF4C2201FF6D00C8F9DF /* iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,7 +169,7 @@
 			children = (
 				CD810BD822044FD400D56D80 /* APIClient.swift */,
 				CD810BDC22046F8200D56D80 /* APIRequest.swift */,
-				CD810BDA220455DD00D56D80 /* FetchElement.swift */,
+				CD810BDA220455DD00D56D80 /* APIFetchableElement.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -637,7 +637,7 @@
 				CD810BD922044FD400D56D80 /* APIClient.swift in Sources */,
 				CD91CFBB2203067000C8F9DF /* PostsRoute.swift in Sources */,
 				CD91CFB12203011500C8F9DF /* PostsViewController.swift in Sources */,
-				CD810BDB220455DD00D56D80 /* FetchElement.swift in Sources */,
+				CD810BDB220455DD00D56D80 /* APIFetchableElement.swift in Sources */,
 				CD810BDF2204770500D56D80 /* Persistable.swift in Sources */,
 				CD810BDD22046F8200D56D80 /* APIRequest.swift in Sources */,
 				CD91CFA02202F85500C8F9DF /* Coordinator.swift in Sources */,
