@@ -38,10 +38,12 @@ class PostsViewController: UIViewController, MVVMView {
         
         self.tableView.registerCell(type: PostTableViewCell.self)
         viewModel.allPosts.bind(to:
-            tableView.rx.items(cellIdentifier: PostTableViewCell.nibIdentifier,
+            tableView
+                .rx
+                .items(cellIdentifier: PostTableViewCell.nibIdentifier,
                                cellType: PostTableViewCell.self)) { (_, post: Post, cell: PostTableViewCell) in
                                 
-                                cell.postTitleLabel?.text = post.title
+                                cell.setPost(post)
             }
             .disposed(by: disposeBag)
         

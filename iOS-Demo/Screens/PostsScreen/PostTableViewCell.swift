@@ -10,6 +10,10 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var postTitleLabel: UILabel!
+    @IBOutlet private weak var postTitleLabel: UILabel!
+    
+    func setPost(_ post: Post) {
+        self.postTitleLabel.text = post.title
+    }
     
 }
