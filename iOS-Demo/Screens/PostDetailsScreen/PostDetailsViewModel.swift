@@ -11,5 +11,9 @@ import UIKit
 class PostDetailsViewModel: ViewModel, CoordinatorManager {
     
     var coordinator: Coordinator<PostDetailsRoute>!
+    let post: Post
     
+    init(post: Post) {
+        self.post = post
+    }
 }

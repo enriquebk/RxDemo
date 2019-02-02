@@ -11,6 +11,14 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
+  /// Details
+  internal static let detailsScreenName = L10n.tr("Localizable", "DetailsScreenName")
+  /// Error
+  internal static let error = L10n.tr("Localizable", "Error")
+  /// Posts
+  internal static let postsScreenName = L10n.tr("Localizable", "PostsScreenName")
+  /// Retry
+  internal static let retry = L10n.tr("Localizable", "Retry")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

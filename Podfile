@@ -10,6 +10,7 @@ target 'iOS-Demo' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RealmSwift'
+  pod 'SVProgressHUD'
   pod 'Hippolyte'
 
   target 'iOS-DemoTests' do
