@@ -61,7 +61,7 @@ class APIFetchableElementTests: XCTestCase {
     func testFetchUsers() {
         
         let expectation = self.expectation(description: "We should get 3 Users")
-        User.fetchAllElementsFromServer().subscribe { (event) in
+        APIClient().fetchElementsFromServer(User.self).subscribe { (event) in
             if let elements = event.element {
                 XCTAssertTrue(elements.count == 3)
                 expectation.fulfill()
@@ -73,7 +73,7 @@ class APIFetchableElementTests: XCTestCase {
     func testFetchPosts() {
         
         let expectation = self.expectation(description: "We should get 3 Posts")
-        Post.fetchAllElementsFromServer().subscribe { (event) in
+        APIClient().fetchElementsFromServer(Post.self).subscribe { (event) in
             if let elements = event.element {
                 XCTAssertTrue(elements.count == 3)
                 expectation.fulfill()
@@ -85,7 +85,7 @@ class APIFetchableElementTests: XCTestCase {
     func testFetchComments() {
 
         let expectation = self.expectation(description: "We should get 3 Comments")
-        Comment.fetchAllElementsFromServer().subscribe { (event) in
+        APIClient().fetchElementsFromServer(Comment.self).subscribe { (event) in
             if let elements = event.element {
                 XCTAssertTrue(elements.count == 3)
                 expectation.fulfill()
