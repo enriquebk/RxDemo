@@ -54,7 +54,7 @@
 		CDA197772204A0E500345C76 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197722204A0E500345C76 /* comments.json */; };
 		CDA197782204A0E500345C76 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197732204A0E500345C76 /* users.json */; };
 		CDA197792204A0E500345C76 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197742204A0E500345C76 /* posts.json */; };
-		CDA1977A2204A0E500345C76 /* APIFetchableElementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */; };
+		CDA1977A2204A0E500345C76 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197752204A0E500345C76 /* APIClientTests.swift */; };
 		CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA197762204A0E500345C76 /* APIRequestTests.swift */; };
 		EBFCA876911F66D3DC49E2DC /* Pods_iOS_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E882E7C53F7E3265B629426 /* Pods_iOS_DemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -136,7 +136,7 @@
 		CDA197722204A0E500345C76 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
 		CDA197732204A0E500345C76 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		CDA197742204A0E500345C76 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
-		CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFetchableElementTests.swift; sourceTree = "<group>"; };
+		CDA197752204A0E500345C76 /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		CDA197762204A0E500345C76 /* APIRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
 		E89C926559A13751E0C112F1 /* Pods-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Demo/Pods-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -387,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				CDA197712204A0E500345C76 /* Responses */,
-				CDA197752204A0E500345C76 /* APIFetchableElementTests.swift */,
+				CDA197752204A0E500345C76 /* APIClientTests.swift */,
 				CDA197762204A0E500345C76 /* APIRequestTests.swift */,
 			);
 			path = APIClient;
@@ -728,7 +728,7 @@
 			files = (
 				CD91CFD622035B6100C8F9DF /* UIViewControllerMock.swift in Sources */,
 				CD91CFD822035B8E00C8F9DF /* TransitionMock.swift in Sources */,
-				CDA1977A2204A0E500345C76 /* APIFetchableElementTests.swift in Sources */,
+				CDA1977A2204A0E500345C76 /* APIClientTests.swift in Sources */,
 				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
 				CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */,
 				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,

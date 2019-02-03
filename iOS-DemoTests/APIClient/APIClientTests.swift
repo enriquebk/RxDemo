@@ -11,7 +11,7 @@ import XCTest
 import Hippolyte
 import RxSwift
 
-class APIFetchableElementTests: XCTestCase {
+class APIClientTests: XCTestCase {
 
     var disposeBag = DisposeBag()
     
