@@ -12,6 +12,7 @@ import RxSwift
 class PostsViewModel: ViewModel, CoordinatorManager {
     
     var coordinator: Coordinator<PostsRoute>!
+    var objectFetcher = ModelFetcher()
     
     private let disposeBag = DisposeBag()
     private var loadingSubject = BehaviorSubject<Bool>(value: false)
@@ -34,8 +35,8 @@ class PostsViewModel: ViewModel, CoordinatorManager {
         return Completable.create { [weak self] completable -> Disposable in
             
             self?.loadingSubject.onNext(true)
-            
-            return Post.fetchAllElementsFromServer().subscribe(onNext: { posts in
+
+            return ModelFetcher().fetchElements(Post.self).subscribe(onNext: { posts in
                 self?.postsSubject.onNext(posts)
             }, onError: { error in
                 self?.loadingSubject.onNext(false)

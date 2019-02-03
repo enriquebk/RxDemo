@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-final class Post: Object, Persistable, Decodable {
+final class Post: Object, Decodable {
 
     @objc dynamic var id: Int64 = 0
     @objc dynamic var userId: Int64 = 0
