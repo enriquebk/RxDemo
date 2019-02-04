@@ -13,21 +13,28 @@ class PostDetailsViewModel: ViewModel {
     
     var modelFetcher = ModelFetcher()
     
-    let post: Observable<Post>
-    let author: Observable<User>
-    let commentsCount: Observable<Int>
+    private var post: Post!
+    var postDetails: Observable<Post> {
+        return Observable<Post>.just(post)
+    }
     
-    init(post: Post) {
-        self.post = Observable<Post>.just(post)
-        self.author = modelFetcher.fetchElements(User.self).map({ users -> User in
-            for user in users where user.id == post.userId {
+    var author: Observable<User> {
+        return modelFetcher.fetchElements(User.self).map({ [weak self] users -> User in
+            for user in users where user.id == self?.post.userId {
                 return user
             }
             return User()
         })
-        self.commentsCount = modelFetcher.fetchElements(Comment.self).map({ comments -> Int in
-            return comments.filter({ $0.postId == post.id }).count
+    }
+    
+    var commentsCount: Observable<Int> {
+        return modelFetcher.fetchElements(Comment.self).map({ [weak self] comments -> Int in
+            return comments.filter({ $0.postId == self?.post.id }).count
         })
+    }
+    
+    init(post: Post) {
+        self.post = post
     }
     
     var screenName: Observable<String> {

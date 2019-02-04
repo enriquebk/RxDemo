@@ -27,7 +27,7 @@ class PostDetailsViewController: UIViewController, MVVMView {
             self?.title = name
             }.disposed(by: disposeBag)
         
-        self.viewModel.post.subscribe { [weak self] event in
+        self.viewModel.postDetails.subscribe { [weak self] event in
             guard let post = event.element else { return }
             self?.bodyLabel.attributedText = self?.atributedText(withTitle: L10n.body,
                                                                       content: post.body)

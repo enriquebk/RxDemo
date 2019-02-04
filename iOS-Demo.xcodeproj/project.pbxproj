@@ -57,6 +57,7 @@
 		CD9BFE762207724600DDFD3C /* ModelFetcherStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE752207724600DDFD3C /* ModelFetcherStub.swift */; };
 		CD9BFE782207901B00DDFD3C /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE772207901B00DDFD3C /* PostDetailsViewModel.swift */; };
 		CD9BFE7A22080F1D00DDFD3C /* PostsViewModelCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE7922080F1D00DDFD3C /* PostsViewModelCoordinatorMock.swift */; };
+		CD9BFE7C22082BBC00DDFD3C /* PostDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE7B22082BBC00DDFD3C /* PostDetailsViewModelTest.swift */; };
 		CDA197772204A0E500345C76 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197722204A0E500345C76 /* comments.json */; };
 		CDA197782204A0E500345C76 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197732204A0E500345C76 /* users.json */; };
 		CDA197792204A0E500345C76 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197742204A0E500345C76 /* posts.json */; };
@@ -145,6 +146,7 @@
 		CD9BFE752207724600DDFD3C /* ModelFetcherStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFetcherStub.swift; sourceTree = "<group>"; };
 		CD9BFE772207901B00DDFD3C /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 		CD9BFE7922080F1D00DDFD3C /* PostsViewModelCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelCoordinatorMock.swift; sourceTree = "<group>"; };
+		CD9BFE7B22082BBC00DDFD3C /* PostDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelTest.swift; sourceTree = "<group>"; };
 		CDA197722204A0E500345C76 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
 		CDA197732204A0E500345C76 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		CDA197742204A0E500345C76 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 			children = (
 				CD9BFE742207722600DDFD3C /* TestsDouble */,
 				CD9BFE722207721100DDFD3C /* PostsViewModelTests.swift */,
+				CD9BFE7B22082BBC00DDFD3C /* PostDetailsViewModelTest.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -782,6 +785,7 @@
 				CD9BFE6C22075E7200DDFD3C /* DataBaseFetcherMock.swift in Sources */,
 				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
 				CD9BFE732207721100DDFD3C /* PostsViewModelTests.swift in Sources */,
+				CD9BFE7C22082BBC00DDFD3C /* PostDetailsViewModelTest.swift in Sources */,
 				CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */,
 				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,
 				CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */,
