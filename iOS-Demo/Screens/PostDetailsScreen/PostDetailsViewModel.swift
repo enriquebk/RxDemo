@@ -9,9 +9,8 @@
 import UIKit
 import RxSwift
 
-class PostDetailsViewModel: ViewModel, CoordinatorManager {
+class PostDetailsViewModel: ViewModel {
     
-    var coordinator: Coordinator<PostDetailsRoute>!
     var modelFetcher = ModelFetcher()
     
     let post: Observable<Post>
