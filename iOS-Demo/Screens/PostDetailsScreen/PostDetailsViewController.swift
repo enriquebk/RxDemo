@@ -23,6 +23,10 @@ class PostDetailsViewController: UIViewController, MVVMView {
     
     func bindViewModel() {
         
+        self.viewModel.screenName.bind { [weak self] name in
+            self?.title = name
+            }.disposed(by: disposeBag)
+        
         self.viewModel.post.subscribe { [weak self] event in
             guard let post = event.element else { return }
             self?.postTitleLabel.text = post.title

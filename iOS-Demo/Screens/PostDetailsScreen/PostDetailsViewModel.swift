@@ -30,4 +30,8 @@ class PostDetailsViewModel: ViewModel, CoordinatorManager {
             return comments.filter({ $0.postId == post.id }).count
         })
     }
+    
+    var screenName: Observable<String> {
+        return Observable.just(L10n.detailsScreenName).single()
+    }
 }
