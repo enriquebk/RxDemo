@@ -33,7 +33,6 @@
 		CD91CFB22203011500C8F9DF /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFB02203011500C8F9DF /* PostsViewController.xib */; };
 		CD91CFB82203060600C8F9DF /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFB72203060600C8F9DF /* PostsViewModel.swift */; };
 		CD91CFBB2203067000C8F9DF /* PostsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBA2203067000C8F9DF /* PostsRoute.swift */; };
-		CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */; };
 		CD91CFC22203070500C8F9DF /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */; };
 		CD91CFC32203070500C8F9DF /* PostDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */; };
 		CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */; };
@@ -122,7 +121,6 @@
 		CD91CFB02203011500C8F9DF /* PostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
 		CD91CFB72203060600C8F9DF /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		CD91CFBA2203067000C8F9DF /* PostsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRoute.swift; sourceTree = "<group>"; };
-		CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsRoute.swift; sourceTree = "<group>"; };
 		CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
 		CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailsViewController.xib; sourceTree = "<group>"; };
 		CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewTests.swift; sourceTree = "<group>"; };
@@ -358,7 +356,6 @@
 			isa = PBXGroup;
 			children = (
 				CD91CFBA2203067000C8F9DF /* PostsRoute.swift */,
-				CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -749,7 +746,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD38296022065EA200F0DE4F /* DataBaseFetcher.swift in Sources */,
-				CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */,
 				CD91CFA42202F88E00C8F9DF /* Transition.swift in Sources */,
 				CD91CF992202666C00C8F9DF /* Strings.swift in Sources */,
 				CD91CFAC2202FFD700C8F9DF /* MainNavigationController.swift in Sources */,

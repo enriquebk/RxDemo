@@ -29,18 +29,33 @@ class PostDetailsViewController: UIViewController, MVVMView {
         
         self.viewModel.post.subscribe { [weak self] event in
             guard let post = event.element else { return }
-            self?.postTitleLabel.text = post.title
-            self?.bodyLabel.text = post.body
+            self?.bodyLabel.attributedText = self?.atributedText(withTitle: L10n.body,
+                                                                      content: post.body)
+            self?.postTitleLabel.attributedText = self?.atributedText(withTitle: L10n.title,
+                                                                         content: post.title)
         }.disposed(by: disposeBag)
         
         self.viewModel.commentsCount.subscribe { [weak self] event in
             guard let commentCount = event.element else { return }
-            self?.comentsCountLabel.text = "\(commentCount)"
+            self?.comentsCountLabel.attributedText = self?.atributedText(withTitle: L10n.comments,
+                                                                   content: "(\(commentCount))")
         }.disposed(by: disposeBag)
         
         self.viewModel.author.subscribe { [weak self] event in
             guard let author = event.element else { return }
-            self?.authorLabel.text = author.name
+            self?.authorLabel.attributedText = self?.atributedText(withTitle: L10n.author,
+                                                                   content: author.name)
             }.disposed(by: disposeBag)
     }
+    
+    private func atributedText(withTitle title: String, content: String ) -> NSMutableAttributedString {
+        let attributedText = NSMutableAttributedString(string: "\(title): ",
+                                                       attributes: [NSAttributedString.Key.font:
+                                                        UIFont.boldSystemFont(ofSize: UIFont.labelFontSize)])
+        
+        attributedText.append(NSAttributedString(string: "\(content)",
+            attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: UIFont.labelFontSize)]))
+        return attributedText
+    }
+    
 }
