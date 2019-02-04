@@ -38,6 +38,6 @@ class PostDetailsViewModel: ViewModel {
     }
     
     var screenName: Observable<String> {
-        return Observable.just(L10n.detailsScreenName).single()
+        return Observable.just(L10n.detailsScreenName)
     }
 }

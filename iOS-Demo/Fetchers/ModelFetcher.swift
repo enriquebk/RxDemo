@@ -24,8 +24,8 @@ class ModelFetcher {
                 self.downloadElementsFromServer()
                     .flatMap({ [weak self] (objects) -> Observable<[Object]> in
                         
-                        guard let wself = self else { return Observable.empty()}
-                        return wself.dataBaseFetcher.persist(objects)
+                        guard let strongSelf = self else { return Observable.empty()}
+                        return strongSelf.dataBaseFetcher.persist(objects)
                             .subscribeOn(MainScheduler())
                             .andThen(Observable.just(objects))
                     })

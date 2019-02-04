@@ -30,10 +30,10 @@ class ModelFetcherTests: XCTestCase {
         
         modelFetcher.fetchElements(Post.self)
             .subscribe(onCompleted: { [weak self] in
-                guard let wself = self else { return }
-                XCTAssertTrue(wself.apiClientMock.didFetchAllComments)
-                XCTAssertTrue(wself.apiClientMock.didFetchAllPosts)
-            	XCTAssertTrue(wself.apiClientMock.didFetchAllUsers)
+                guard let strongSelf = self else { return }
+                XCTAssertTrue(strongSelf.apiClientMock.didFetchAllComments)
+                XCTAssertTrue(strongSelf.apiClientMock.didFetchAllPosts)
+            	XCTAssertTrue(strongSelf.apiClientMock.didFetchAllUsers)
                 expectation.fulfill()
         }).disposed(by: disposeBag)
         
@@ -49,10 +49,10 @@ class ModelFetcherTests: XCTestCase {
         modelFetcher.fetchElements(Post.self)
             .subscribe(
             onCompleted: { [weak self] in
-                guard let wself = self else { return }
-                XCTAssertTrue(wself.apiClientMock.didFetchAllComments == false)
-                XCTAssertTrue(wself.apiClientMock.didFetchAllPosts == false)
-                XCTAssertTrue(wself.apiClientMock.didFetchAllUsers == false)
+                guard let strongSelf = self else { return }
+                XCTAssertTrue(strongSelf.apiClientMock.didFetchAllComments == false)
+                XCTAssertTrue(strongSelf.apiClientMock.didFetchAllPosts == false)
+                XCTAssertTrue(strongSelf.apiClientMock.didFetchAllUsers == false)
                 expectation.fulfill()
         }).disposed(by: disposeBag)
         
@@ -81,8 +81,8 @@ class ModelFetcherTests: XCTestCase {
         modelFetcher.fetchElements(Post.self)
             .subscribe(
                 onCompleted: { [weak self] in
-                    guard let wself = self else { return }
-                    XCTAssertTrue(wself.databaseMock.didCallPersistMethod)
+                    guard let strongSelf = self else { return }
+                    XCTAssertTrue(strongSelf.databaseMock.didCallPersistMethod)
                     expectation.fulfill()
             }).disposed(by: disposeBag)
         
@@ -98,8 +98,8 @@ class ModelFetcherTests: XCTestCase {
         modelFetcher.fetchElements(Post.self)
             .subscribe(
                 onCompleted: { [weak self] in
-                    guard let wself = self else { return }
-                    XCTAssertTrue(wself.databaseMock.didCallPersistMethod == false)
+                    guard let strongSelf = self else { return }
+                    XCTAssertTrue(strongSelf.databaseMock.didCallPersistMethod == false)
                     expectation.fulfill()
             }).disposed(by: disposeBag)
         
