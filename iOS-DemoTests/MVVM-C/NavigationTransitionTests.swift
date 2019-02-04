@@ -11,7 +11,7 @@ import XCTest
 
 class NavigationTransitionTests: XCTestCase {
 
-    var viewControllerMock: UIViewControllerMock!
+    private var viewControllerMock: UIViewControllerMock!
     
     override func setUp() {
         viewControllerMock = UIViewControllerMock()
