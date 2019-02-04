@@ -9,7 +9,17 @@
 import UIKit
 
 enum PostsRoute: Route {
+    
+    case details(Post)
+    
     func getTransition() -> Transition {
-        return NavigationTransition(.noTransition)
+        switch self {
+        case let .details(post):
+            
+            let viewModel = PostDetailsViewModel(post: post)
+            let postDetails = PostDetailsViewController.instantiate(with: viewModel)
+            
+            return NavigationTransition(.push(postDetails))
+        }
     }
 }

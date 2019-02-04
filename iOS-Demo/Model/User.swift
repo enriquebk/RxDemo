@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 import CoreLocation
 
-final class User: Object, Persistable, Decodable {
+final class User: Object, Decodable {
 
     @objc dynamic var id: Int64 = 0
     @objc dynamic var name: String = ""

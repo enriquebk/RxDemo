@@ -5,3 +5,7 @@
   Created by Enrique Bermúdez on 1/30/19.
   Copyright © 2019 Enrique Bermudez. All rights reserved.
 */
+"PostsScreenName"="Posts";
+"DetailsScreenName"="Details";
+"Error"="Error";
+"Retry"="Retry";

@@ -10,23 +10,8 @@ import UIKit
 import RealmSwift
 import RxSwift
 
-protocol APIFetchableElement {
-    static func fetchAllElementsFromServer() -> Observable<[Self]>
+protocol APIFetchableElement: Decodable {
     static func fetchRequest() -> APIRequest
-}
-
-extension APIFetchableElement where Self: Decodable {
-    
-    static func fetchAllElementsFromServer() -> Observable<[Self]> {
-        return APIClient.execute(request: self.fetchRequest()).map({
-            do {
-                let elements =  try JSONDecoder().decode([Self].self, from: $0)
-                return elements
-            } catch {
-                throw error
-            }
-        })
-    }
 }
 
 extension User: APIFetchableElement {

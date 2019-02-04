@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-final class Comment: Object, Persistable, Decodable {
+final class Comment: Object, Decodable {
 
     @objc dynamic var id: Int64 = 0
     @objc dynamic var postId: Int64 = 0

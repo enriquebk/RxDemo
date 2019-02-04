@@ -8,6 +8,7 @@ PODS:
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
+  - SVProgressHUD (2.2.5)
   - SwiftGen (6.0.2)
   - SwiftLint (0.27.0)
 
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - RealmSwift
   - RxCocoa
   - RxSwift
+  - SVProgressHUD
   - SwiftGen
   - SwiftLint
 
@@ -26,6 +28,7 @@ SPEC REPOS:
     - RealmSwift
     - RxCocoa
     - RxSwift
+    - SVProgressHUD
     - SwiftGen
     - SwiftLint
 
@@ -35,9 +38,10 @@ SPEC CHECKSUMS:
   RealmSwift: 5f0481cd658bb751c509314b964a35eaa264d2cf
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 3887f1a02c01d9152c1302f5755f231d3d58d947
+PODFILE CHECKSUM: 17be69e6d88e770d2f56f7886c735c1fb9d01a43
 
 COCOAPODS: 1.5.3
