@@ -25,3 +25,12 @@ To install Cocoapods dependencies, run following command in terminal:
 $ bundle exec pod install
 
 ```
+
+## Implemented Features:
+
+* Model View ViewModel - Coordinator architecture
+* RxSwift
+* Unit Testis
+* Continuous integration
+* Dependency manager via Cocoapods 
+* Localization and safe string usage using SwiftGen
