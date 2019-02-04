@@ -13,7 +13,7 @@ import SVProgressHUD
 
 class PostsViewController: UIViewController, MVVMView {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     private let disposeBag = DisposeBag()
     var viewModel: PostsViewModel!
     
@@ -57,7 +57,7 @@ class PostsViewController: UIViewController, MVVMView {
             .disposed(by: disposeBag)
     }
     
-    func loadPosts() {
+    private func loadPosts() {
         self.viewModel.loadPosts().subscribe(onError: { [weak self]  error in
             let alertController = UIAlertController(title: L10n.error,
                                                     message: error.localizedDescription,
