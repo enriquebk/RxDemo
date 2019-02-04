@@ -7,13 +7,27 @@
 //
 
 import UIKit
+import RxSwift
 
 class PostDetailsViewModel: ViewModel, CoordinatorManager {
     
     var coordinator: Coordinator<PostDetailsRoute>!
-    let post: Post
+    var modelFetcher = ModelFetcher()
+    
+    let post: Observable<Post>
+    let author: Observable<User>
+    let commentsCount: Observable<Int>
     
     init(post: Post) {
-        self.post = post
+        self.post = Observable<Post>.just(post)
+        self.author = modelFetcher.fetchElements(User.self).map({ users -> User in
+            for user in users where user.id == post.userId {
+                return user
+            }
+            return User()
+        })
+        self.commentsCount = modelFetcher.fetchElements(Comment.self).map({ comments -> Int in
+            return comments.filter({ $0.postId == post.id }).count
+        })
     }
 }
