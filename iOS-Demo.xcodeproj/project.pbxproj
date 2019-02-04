@@ -33,7 +33,6 @@
 		CD91CFB22203011500C8F9DF /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFB02203011500C8F9DF /* PostsViewController.xib */; };
 		CD91CFB82203060600C8F9DF /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFB72203060600C8F9DF /* PostsViewModel.swift */; };
 		CD91CFBB2203067000C8F9DF /* PostsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBA2203067000C8F9DF /* PostsRoute.swift */; };
-		CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */; };
 		CD91CFC22203070500C8F9DF /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */; };
 		CD91CFC32203070500C8F9DF /* PostDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */; };
 		CD91CFC622030CF300C8F9DF /* MVVMViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */; };
@@ -58,6 +57,7 @@
 		CD9BFE762207724600DDFD3C /* ModelFetcherStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE752207724600DDFD3C /* ModelFetcherStub.swift */; };
 		CD9BFE782207901B00DDFD3C /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE772207901B00DDFD3C /* PostDetailsViewModel.swift */; };
 		CD9BFE7A22080F1D00DDFD3C /* PostsViewModelCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE7922080F1D00DDFD3C /* PostsViewModelCoordinatorMock.swift */; };
+		CD9BFE7C22082BBC00DDFD3C /* PostDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9BFE7B22082BBC00DDFD3C /* PostDetailsViewModelTest.swift */; };
 		CDA197772204A0E500345C76 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197722204A0E500345C76 /* comments.json */; };
 		CDA197782204A0E500345C76 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197732204A0E500345C76 /* users.json */; };
 		CDA197792204A0E500345C76 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = CDA197742204A0E500345C76 /* posts.json */; };
@@ -122,7 +122,6 @@
 		CD91CFB02203011500C8F9DF /* PostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
 		CD91CFB72203060600C8F9DF /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		CD91CFBA2203067000C8F9DF /* PostsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRoute.swift; sourceTree = "<group>"; };
-		CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsRoute.swift; sourceTree = "<group>"; };
 		CD91CFC02203070500C8F9DF /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
 		CD91CFC12203070500C8F9DF /* PostDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailsViewController.xib; sourceTree = "<group>"; };
 		CD91CFC522030CF300C8F9DF /* MVVMViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewTests.swift; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 		CD9BFE752207724600DDFD3C /* ModelFetcherStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFetcherStub.swift; sourceTree = "<group>"; };
 		CD9BFE772207901B00DDFD3C /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 		CD9BFE7922080F1D00DDFD3C /* PostsViewModelCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelCoordinatorMock.swift; sourceTree = "<group>"; };
+		CD9BFE7B22082BBC00DDFD3C /* PostDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModelTest.swift; sourceTree = "<group>"; };
 		CDA197722204A0E500345C76 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
 		CDA197732204A0E500345C76 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		CDA197742204A0E500345C76 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
@@ -358,7 +358,6 @@
 			isa = PBXGroup;
 			children = (
 				CD91CFBA2203067000C8F9DF /* PostsRoute.swift */,
-				CD91CFBE220306C000C8F9DF /* PostDetailsRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -422,6 +421,7 @@
 			children = (
 				CD9BFE742207722600DDFD3C /* TestsDouble */,
 				CD9BFE722207721100DDFD3C /* PostsViewModelTests.swift */,
+				CD9BFE7B22082BBC00DDFD3C /* PostDetailsViewModelTest.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -749,7 +749,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD38296022065EA200F0DE4F /* DataBaseFetcher.swift in Sources */,
-				CD91CFBF220306C000C8F9DF /* PostDetailsRoute.swift in Sources */,
 				CD91CFA42202F88E00C8F9DF /* Transition.swift in Sources */,
 				CD91CF992202666C00C8F9DF /* Strings.swift in Sources */,
 				CD91CFAC2202FFD700C8F9DF /* MainNavigationController.swift in Sources */,
@@ -786,6 +785,7 @@
 				CD9BFE6C22075E7200DDFD3C /* DataBaseFetcherMock.swift in Sources */,
 				CD91CFDE22035CB800C8F9DF /* FakeViewModelCoordinator.swift in Sources */,
 				CD9BFE732207721100DDFD3C /* PostsViewModelTests.swift in Sources */,
+				CD9BFE7C22082BBC00DDFD3C /* PostDetailsViewModelTest.swift in Sources */,
 				CDA1977B2204A0E500345C76 /* APIRequestTests.swift in Sources */,
 				CD91CFD022034C1300C8F9DF /* NavigationTransitionTests.swift in Sources */,
 				CD91CFE422035D7C00C8F9DF /* MVVMCUtilsTests.swift in Sources */,

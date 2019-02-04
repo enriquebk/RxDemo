@@ -34,9 +34,11 @@ class PostsViewModel: ViewModel, CoordinatorManager {
     
         return Completable.create { [weak self] completable -> Disposable in
             
-            self?.loadingSubject.onNext(true)
+            guard let wself = self else { return Disposables.create() }
+            
+            wself.loadingSubject.onNext(true)
 
-            return ModelFetcher().fetchElements(Post.self).subscribe(onNext: { posts in
+            return wself.objectFetcher.fetchElements(Post.self).subscribe(onNext: { posts in
                 self?.postsSubject.onNext(posts)
             }, onError: { error in
                 self?.loadingSubject.onNext(false)

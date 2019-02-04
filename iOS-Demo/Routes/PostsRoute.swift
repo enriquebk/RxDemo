@@ -17,9 +17,10 @@ enum PostsRoute: Route {
         case let .details(post):
             
             let viewModel = PostDetailsViewModel(post: post)
-            let postDetails = PostDetailsViewController.instantiate(with: viewModel)
+            let postDetailsViewController = PostDetailsViewController()
+            postDetailsViewController.bind(to: viewModel)
             
-            return NavigationTransition(.push(postDetails))
+            return NavigationTransition(.push(postDetailsViewController))
         }
     }
 }
