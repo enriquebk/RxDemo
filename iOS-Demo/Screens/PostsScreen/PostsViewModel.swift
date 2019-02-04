@@ -14,12 +14,11 @@ class PostsViewModel: ViewModel, CoordinatorManager {
     var coordinator: Coordinator<PostsRoute>!
     var objectFetcher = ModelFetcher()
     
-    private let disposeBag = DisposeBag()
     private var loadingSubject = BehaviorSubject<Bool>(value: false)
     private var postsSubject = BehaviorSubject<[Post]>(value: [])
 
     var screenName: Observable<String> {
-        return Observable.just(L10n.postsScreenName).single()
+        return Observable.just(L10n.postsScreenName)
     }
 
     var loading: Observable<Bool> {
@@ -34,11 +33,11 @@ class PostsViewModel: ViewModel, CoordinatorManager {
     
         return Completable.create { [weak self] completable -> Disposable in
             
-            guard let wself = self else { return Disposables.create() }
+            guard let strongSelf = self else { return Disposables.create() }
             
-            wself.loadingSubject.onNext(true)
+            strongSelf.loadingSubject.onNext(true)
 
-            return wself.objectFetcher.fetchElements(Post.self).subscribe(onNext: { posts in
+            return strongSelf.objectFetcher.fetchElements(Post.self).subscribe(onNext: { posts in
                 self?.postsSubject.onNext(posts)
             }, onError: { error in
                 self?.loadingSubject.onNext(false)
