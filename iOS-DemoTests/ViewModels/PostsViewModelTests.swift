@@ -12,10 +12,9 @@ import RxSwift
 
 class PostsViewModelTests: XCTestCase {
 
-    let disposeBag = DisposeBag()
-    let viewModel = PostsViewModel()
-    
-    let cooridnator = PostsViewModelCoordinatorMock()
+    private let disposeBag = DisposeBag()
+    private let viewModel = PostsViewModel()
+    private let cooridnator = PostsViewModelCoordinatorMock()
     
     override func setUp() {
         viewModel.objectFetcher = ModelFetcherStub()

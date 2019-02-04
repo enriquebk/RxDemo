@@ -12,12 +12,12 @@ import RxCocoa
 
 class PostDetailsViewController: UIViewController, MVVMView {
    
-    @IBOutlet weak var postTitleLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var comentsCountLabel: UILabel!
-    @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet private weak var postTitleLabel: UILabel!
+    @IBOutlet private weak var authorLabel: UILabel!
+    @IBOutlet private weak var comentsCountLabel: UILabel!
+    @IBOutlet private weak var bodyLabel: UILabel!
     
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
     
     var viewModel: PostDetailsViewModel!
     

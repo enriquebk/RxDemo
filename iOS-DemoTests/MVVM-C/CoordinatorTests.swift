@@ -11,8 +11,8 @@ import XCTest
 
 class CoordinatorTests: XCTestCase {
 
-    var root: UIViewController!
-    var coordinator: Coordinator<RouteMock>!
+    private var root: UIViewController!
+    private var coordinator: Coordinator<RouteMock>!
     
     override func setUp() {
         root = UIViewController()

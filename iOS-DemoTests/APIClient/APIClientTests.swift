@@ -13,7 +13,7 @@ import RxSwift
 
 class APIClientTests: XCTestCase {
 
-    var disposeBag = DisposeBag()
+    private var disposeBag = DisposeBag()
     
     override func setUp() {
         super.setUp()

@@ -12,9 +12,9 @@ import RxSwift
 
 class PostDetailsViewModelTest: XCTestCase {
 
-    let disposeBag = DisposeBag()
-    var viewModel: PostDetailsViewModel!
-    let modelFetcher =  ModelFetcherStub()
+    private let disposeBag = DisposeBag()
+    private var viewModel: PostDetailsViewModel!
+    private let modelFetcher =  ModelFetcherStub()
     
     override func setUp() {
         let post = modelFetcher.postsFromJSON()[0]

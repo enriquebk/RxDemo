@@ -12,10 +12,10 @@ import RxSwift
 
 class ModelFetcherTests: XCTestCase {
 
-    let disposeBag = DisposeBag()
-    let modelFetcher = ModelFetcher()
-    let databaseMock = DataBaseFetcherMock()
-    let apiClientMock = APIClientMock()
+    private let disposeBag = DisposeBag()
+    private let modelFetcher = ModelFetcher()
+    private let databaseMock = DataBaseFetcherMock()
+    private let apiClientMock = APIClientMock()
     
     override func setUp() {
         modelFetcher.dataBaseFetcher = databaseMock
