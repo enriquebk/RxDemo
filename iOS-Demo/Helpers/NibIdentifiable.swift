@@ -3,7 +3,7 @@
 //  iOS-Demo
 //
 //  Created by Enrique Bermúdez on 2/2/19.
-//  Copyright © 2018 AssureDrive. All rights reserved.
+//  Copyright © 2019 Enrique Bermudez. All rights reserved.
 //
 
 import Foundation
