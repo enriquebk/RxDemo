@@ -21,21 +21,32 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F5K-Qw-rmf">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="tTV-fw-AEW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F5K-Qw-rmf">
                     <rect key="frame" x="0.0" y="88" width="375" height="724"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="tTV-fw-AEW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1X5-ZT-23J"/>
                 <constraint firstAttribute="bottom" secondItem="F5K-Qw-rmf" secondAttribute="bottom" id="AEJ-Lq-cX7"/>
+                <constraint firstAttribute="bottom" secondItem="tTV-fw-AEW" secondAttribute="bottom" id="BE5-8C-2QD"/>
+                <constraint firstItem="tTV-fw-AEW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EPl-hl-oeO"/>
                 <constraint firstItem="F5K-Qw-rmf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KEr-c1-KEi"/>
                 <constraint firstItem="F5K-Qw-rmf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S5q-lb-TsU"/>
+                <constraint firstItem="tTV-fw-AEW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ocU-1R-iT3"/>
                 <constraint firstItem="F5K-Qw-rmf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wTd-4R-ELF"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="130.40000000000001" y="132.26600985221674"/>
+            <point key="canvasLocation" x="130.40000000000001" y="131.52709359605913"/>
         </view>
     </objects>
+    <resources>
+        <image name="background" width="1080" height="1920"/>
+    </resources>
 </document>
