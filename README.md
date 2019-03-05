@@ -1,7 +1,18 @@
-# iOS-Demo
+# RxDemo
 
 [![Build Status](https://api.travis-ci.org/enriquebk/iOS-Demo.svg?branch=master)](https://travis-ci.org/enriquebk/iOS-Demo)
 [![codecov](https://codecov.io/gh/enriquebk/iOS-Demo/branch/master/graph/badge.svg)](https://codecov.io/gh/enriquebk/iOS-Demo)
+
+This is a small demo app that uses RxSwift. It consists of a list of posts, where each post has its own detail. 
+
+## Implemented Features:
+
+* Model View ViewModel - Coordinator architecture
+* RxSwift
+* Unit Testis
+* Continuous integration
+* Dependency manager via Cocoapods 
+* Localization and safe string usage using SwiftGen
 
 ## Installation
 To install Ruby Gems dependencies, run the following command in terminal: 
@@ -25,12 +36,3 @@ To install Cocoapods dependencies, run following command in terminal:
 $ bundle exec pod install
 
 ```
-
-## Implemented Features:
-
-* Model View ViewModel - Coordinator architecture
-* RxSwift
-* Unit Testis
-* Continuous integration
-* Dependency manager via Cocoapods 
-* Localization and safe string usage using SwiftGen
