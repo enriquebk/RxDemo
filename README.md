@@ -1,7 +1,7 @@
 # RxDemo
 
 [![Build Status](https://api.travis-ci.org/enriquebk/RxDemo.svg?branch=master)](https://travis-ci.org/enriquebk/RxDemo)
-[![codecov](https://codecov.io/gh/enriquebk/iOS-Demo/branch/master/graph/badge.svg)](https://codecov.io/gh/enriquebk/RxDemo)
+[![codecov](https://codecov.io/gh/enriquebk/RxDemo/branch/master/graph/badge.svg)](https://codecov.io/gh/enriquebk/RxDemo)
 
 This is a small demo app that uses RxSwift. It consists of a list of posts, where each post has its own detail. 
 
