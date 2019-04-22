@@ -9,7 +9,7 @@ This is a small demo app that uses RxSwift. It consists of a list of posts, wher
 
 * Model View ViewModel - Coordinator architecture
 * RxSwift
-* Unit Testis
+* Unit Tests
 * Continuous integration
 * Dependency manager via Cocoapods 
 * Localization and safe string usage using SwiftGen
